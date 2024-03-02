@@ -1,0 +1,11 @@
+# created by virtualenv automatically
+# .gitignore
+
+# Python
+__pycache__/
+
+# Django
+**/migrations/
+*.pyc
+*.pyo
+*.pyd
