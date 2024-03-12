@@ -136,7 +136,13 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
+    
+    'DEFAULT_PAGINATION_CLASS': 'main.pagination.CustomPagination',
+    'PAGE_SIZE': 1
+
+    # temporary comment until finish django api and uncomment when we start react
+
+    # 'DEFAULT_AUTHENTICATION_CLASSES': (
+    #     'rest_framework_simplejwt.authentication.JWTAuthentication',
+    # )
 }
